@@ -1,40 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julián David Osorio Villegas - Desarrollador</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1>Julián David Osorio Villegas</h1>
-    <p>"Ser buen mecánico no significa tener las mejores herramientas, sino saber utilizarlas."</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="projects.html">Proyectos</a></li>
-        <li><a href="about.html">Acerca de mí</a></li>
-        <li><a href="skills.html">Conocimientos</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julián David Osorio Villegas - Portafolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/images/foto-perfil.jpeg"
+        alt="Foto de Julián"
+        class="foto-perfil"
+      />
+      <h1>Julián David Osorio Villegas</h1>
+      <p class="eslogan">
+        "Ser buen mecánico no significa tener las mejores herramientas, sino
+        saber usar las necesarias."
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#acerca">Acerca de mí</a></li>
+          <li><a href="#conocimientos">Conocimientos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Bienvenido</h2>
-      <p>Soy desarrollador backend con conocimientos frontend. Este es mi portafolio profesional.</p>
-    </section>
-  </main>
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>
+          Soy desarrollador backend con experiencia en frontend. Aquí puedes
+          explorar mis proyectos y habilidades.
+        </p>
+      </section>
 
-  <footer>
-    <p>Contacto: julian@email.com | +57 300 000 0000</p>
-    <p>
-      <a href="https://github.com/tuusuario" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
-    </p>
-  </footer>
+      <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos-carrusel">
+          <article class="proyecto-card">
+            <h3>VerdiGuard / ReCirc</h3>
+            <p>Plataforma ecológica educativa (maqueta).</p>
+          </article>
+          <article class="proyecto-card">
+            <h3>Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </article>
+          <article class="proyecto-card">
+            <h3>Proyecto 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </article>
+        </div>
+      </section>
 
-  <script src="js/main.js"></script>
-</body>
+      <section id="acerca">
+        <h2>Acerca de mí</h2>
+        <p>
+          Apasionado por la tecnología, con experiencia en proyectos reales y
+          motivado por el aprendizaje constante.
+        </p>
+      </section>
+
+      <section id="conocimientos">
+        <h2>Conocimientos</h2>
+        <ul>
+          <li>
+            <strong>Backend:</strong> Node.js, Java, Spring Boot, NestJS,
+            Express, PHP
+          </li>
+          <li>
+            <strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript,
+            Angular
+          </li>
+          <li><strong>Bases de datos / Cloud:</strong> AWS, Azure, SQL</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>📧 julian@email.com | ☎️ +57 300 123 4567</p>
+      <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+  </body>
 </html>
