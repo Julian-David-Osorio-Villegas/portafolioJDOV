@@ -1,131 +1,68 @@
-/* Reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo general */
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00c9a7, #92fe9d);
+  color: #ffffff;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  padding: 1rem;
-  color: #222;
+  min-height: 100vh;
 }
 
-header {
-  text-align: center;
-  background-color: #222;
-  color: white;
-  padding: 2rem 1rem;
-  border-radius: 10px;
-}
-
-nav {
-  display: none;
-}
-
-.foto-perfil {
-  width: 120px;
-  height: 120px;
+img {
+  width: 200px;
   border-radius: 50%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.inicio h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.eslogan {
-  font-style: italic;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+.descripcion {
+  max-width: 30rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  gap: 10px;
-  padding: 1rem 0;
-}
-
-nav a {
-  color: #00ffcc;
+/* Botón */
+.btn-empezar {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #00c9a7;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-main section {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: white;
-  border-radius: 8px;
+.btn-empezar:hover {
+  background-color: #00a18c;
+  color: #fff;
 }
 
-/* Carrusel para móviles */
-.proyectos-carrusel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 1rem;
-  padding-bottom: 1rem;
-  -webkit-overflow-scrolling: touch;
-}
-
-.proyecto-card {
-  flex: 0 0 80%;
-  scroll-snap-align: start;
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 8px;
-  min-width: 250px;
-}
-
-#conocimientos ul {
-  padding-left: 1rem;
-}
-
-/* Footer */
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* 📱 Responsive Design (Tablet / Desktop) */
-@media (min-width: 768px) {
-  nav ul {
-    gap: 2rem;
-  }
-  .proyectos-carrusel {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    overflow: visible;
-    gap: 1.5rem;
+/* Responsive */
+@media (max-width: 600px) {
+  .inicio h1 {
+    font-size: 2rem;
   }
 
-  .proyecto-card {
-    flex: unset;
-    min-width: unset;
-  }
-
-  nav {
-    display: flex;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    padding: 2rem 10%;
-  }
-
-  header {
-    text-align: left;
-  }
-  nav {
-    display: flex;
-  }
-
-  nav ul {
-    justify-content: flex-start;
+  .descripcion {
+    font-size: 1rem;
   }
 }
